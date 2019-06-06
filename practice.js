@@ -121,7 +121,7 @@ contains(names, 'Colt', function(result){
 function uniq (arr, callback) {
   let modArr = []
   modArr = arr.filter ((value, i) => {
-    return arr.indexOf(value) === i
+    return arr.indexOf(value) >= i
   })
   callback(modArr)
 }
